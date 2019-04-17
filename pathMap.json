@@ -1,7 +1,7 @@
 {
-    "EU":"http://no.meet.marinit.no/redirectPath",
-    "OC":"http://perth.meet.marinit.no/redirectPath",
-    "NA":"http://rio.meet.marinit.no/redirectPath",
-    "SA":"http://perth.meet.marinit.no/redirectPath",
-    "default":"http://no.meet.marinit.no/redirectPath"
+    "EU":"http://nor.meet.marinit.no",
+    "OC":"http://pth.meet.marinit.no",
+    "NA":"http://rio.meet.marinit.no",
+    "SA":"http://rio.meet.marinit.no",
+    "default":"http://nor.meet.marinit.no"
 }

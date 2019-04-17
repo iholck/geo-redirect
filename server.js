@@ -8,13 +8,16 @@ const port = 8080;
 
 
 
-  app.get('/resolve', (req, res) => {
-    var ip = req.connection.remoteAddress;
-  //  var ip = '::1';
-    console.log(`Ip: ${ip}`);
+  app.get(/.*/, (req, res) => {
+    const ip = req.connection.remoteAddress;
+    const path = req.originalUrl;
+   // var ip = '192.168.20.10';
+    console.log(`Ip: ${ip}, path ${path}`);
     resolve_location.resolve_location(ip)
       .then(response => {
-        res.redirect(redirectPathMap[response]);
+        var host = redirectPathMap[response],
+        host = host === null || typeof host === 'undefined' ? redirectPathMap['EU'] : host;
+        res.redirect(host+path);
       })
       .catch(error => {
         res.send(error);
