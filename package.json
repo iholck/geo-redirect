@@ -2,7 +2,7 @@
   "name": "geo-redirect",
   "version": "1.0.0",
   "description": "Redirect based on IP of requester",
-  "main": "georedirect.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
