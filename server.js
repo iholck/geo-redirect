@@ -17,6 +17,7 @@ const port = 8080;
       .then(response => {
         var host = redirectPathMap[response],
         host = host === null || typeof host === 'undefined' ? redirectPathMap['EU'] : host;
+        console.log(`Ip: ${ip}, path: ${path}, host:${host}`);
         res.redirect(host+path);
       })
       .catch(error => {

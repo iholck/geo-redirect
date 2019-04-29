@@ -1,7 +1,7 @@
 {
-    "EU":"http://nor.meet.marinit.no",
-    "OC":"http://pth.meet.marinit.no",
-    "NA":"http://rio.meet.marinit.no",
-    "SA":"http://rio.meet.marinit.no",
-    "default":"http://nor.meet.marinit.no"
+    "EU":"https://nor.meet.marinit.no",
+    "OC":"https://pth.meet.marinit.no",
+    "NA":"https://rio.meet.marinit.no",
+    "SA":"https://rio.meet.marinit.no",
+    "default":"https://nor.meet.marinit.no"
 }
