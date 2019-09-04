@@ -4,14 +4,13 @@ const rangeCheck = require('ip-range-check');
 const fs = require('fs');
 var addressJson = JSON.parse(fs.readFileSync('addressMap.json'));
 const addressArray = Object.keys(addressJson);
-
-const ipArray = {}
+const responseKey = process.env.RESPONSE_KEY || 'continent_code';
 
 
 module.exports = {
 
     resolve_location: function (ip) {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             addressArray.forEach(function (item) {
                 if (rangeCheck(ip, item)) {
                     resolve(addressJson[item]);
@@ -24,7 +23,7 @@ module.exports = {
                     body += data;
                 })
                 resp.on('end', function () {
-                    const result = JSON.parse(body).continent_code;
+                    const result = JSON.parse(body)[responseKey];
                     resolve(result === null || typeof result === 'undefined' ? 'default' : result);
                 });
             });
