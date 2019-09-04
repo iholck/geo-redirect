@@ -31,7 +31,7 @@ Go to any path on your host at port 8080 and get redirected according to your lo
 ## Docker
 
 ### Building
-To build a docker image for the application, issue the command 'docker build -t <your image repository/tag> .' from the command line.
+To build a docker image for the application, issue the command 'docker build -t \<your image repository/tag\> .' from the command line.
 
 ### Running
-Issue the command 'docker run -d --env IPAPI=<your IPAPI key> --env RESPONSE_KEY=<Your response object name> <your image name>
+Issue the command 'docker run -d --env IPAPI=\<your IPAPI key\> --env RESPONSE_KEY=\<Your response object name\> \<your image name\>
