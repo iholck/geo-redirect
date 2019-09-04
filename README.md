@@ -4,7 +4,7 @@ Redirect http requests to a nearby server based on their geographic location.
 
 ## Description
 
-Geographic DNS routing redirects your browser to a local server, based on your geolocation. Not all DNS providers support this. Geo-redirect will redirect your browser to a server near your location, based on your IP address, preserving the path part of the request. Supports ipapi.com and RFC1918 addresses though config files.
+Geographic DNS routing redirects your browser to a local server, based on your geolocation. Not all DNS providers support this. Geo-redirect will redirect your browser to a server near your location, based on your IP address, preserving the path part of the request. Supports ipapi.com and RFC1918 addresses though config files. Originally written to provide participants in WebRTC meeting with a local server.
 
 ## Requirements
 
